@@ -1,0 +1,62 @@
+/* Styles pour les titres de niveau 1 */
+.h1 {
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Styles pour les titres de niveau 2 */
+.h2 {
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Styles pour les paragraphes */
+.corps p {
+    color: #333;
+}
+
+/* Styles pour les liens */
+.corps a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+
+/* Styles pour les blocs de citation */
+blockquote {
+    font-style: italic;
+    color: #777;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+/* Styles pour les liens au survol */
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le conteneur principal */
+.corps {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Styles pour les citations */
+.quote {
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles pour les images */
+div.image{
+    height: 125px;
+}

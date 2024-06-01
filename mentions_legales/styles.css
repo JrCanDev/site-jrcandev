@@ -1,0 +1,29 @@
+/* Styles pour le conteneur de texte */
+body div.text {
+    padding: 1em;
+}
+
+/* Styles pour les paragraphes dans le conteneur de texte */
+body div.text p {
+    text-align: justify;
+}
+
+/* Styles pour les listes à puces dans le conteneur de texte */
+body div.text ul {
+    list-style-position: inside;
+    margin-bottom: 1em;
+}
+
+/* Styles pour les éléments de liste dans le conteneur de texte */
+body div.text ul li {
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+/* Styles pour les liens cliquables */
+p a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}

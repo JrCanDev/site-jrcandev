@@ -1,0 +1,128 @@
+/* Styles pour les balises <h1> à l'intérieur des éléments ayant la classe "corps" */
+.corps h1 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Styles pour les balises <h2> à l'intérieur des éléments ayant la classe "corps" */
+.corps h2 {
+    color: #333;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps p {
+    color: #666;
+}
+
+/* Styles pour les balises <a> à l'intérieur des éléments ayant la classe "corps" */
+.corps a {
+    color: #2c92ff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Styles pour les listes ordonnées et non ordonnées à l'intérieur des éléments ayant la classe "corps" */
+.corps ol,
+.corps ul {
+    color: #666;
+    margin-left: 20px;
+}
+
+.corps li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+  
+
+/* Styles pour les éléments <pre> à l'intérieur des éléments ayant la classe "corps" */
+.corps pre {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Styles pour le contenu des balises <code> à l'intérieur des éléments <pre> */
+.corps pre code {
+    font-family: Consolas, monospace;
+}
+
+/* Styles pour les éléments ayant la classe "video-tutorial" */
+.video-tutorial {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 8px;
+    max-width: 60%; /* Ajout de la propriété max-width */
+    
+}
+
+/* Styles pour les vidéos à l'intérieur des éléments ayant la classe "video-tutorial" */
+.video-tutorial video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour les liens lorsqu'ils sont survolés */
+a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+
+
+.dropdown {
+    position: fixed;
+    top: 180px;
+    right: 20px;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    max-height: 500px;
+    overflow-y: auto;
+    min-width: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown .dropdown-toggle {
+    width: 100px;
+    height: 50px;
+    background-color: #c4c4c4;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown .dropdown-toggle span {
+    margin-left: 5px;
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .dropdown {
+        display: none;
+    }
+
+    .questions {
+        display: block;
+    }
+}
+
+@media (min-width: 801px) {
+    .questions {
+        display: none;
+    }
+}

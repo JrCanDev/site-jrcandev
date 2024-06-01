@@ -1,0 +1,54 @@
+/* Styles pour les éléments ayant la classe "corps" */
+.corps {
+    padding-top: 5%;
+    text-align: left;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps p {
+    overflow-wrap: break-word; /* Ajout de la propriété overflow-wrap pour le passage à la ligne des mots longs */
+}
+
+/* Styles pour les balises <a> à l'intérieur des balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps p a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Styles pour les balises <h1> */
+h1 {
+    color:#333;
+}
+
+/* Styles pour les liens <a> lorsqu'ils sont survolés */
+h1 a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    .corps {
+        width: 95%;
+    }
+
+    .corps p {
+        font-size: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+}
+
+/* Styles pour les écrans de très petite taille */
+@media screen and (max-width: 480px) {
+    .corps p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

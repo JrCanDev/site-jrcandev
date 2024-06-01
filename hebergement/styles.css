@@ -1,0 +1,58 @@
+/* Styles pour les titres h1 */
+.corps h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les paragraphes */
+.corps p {
+    color: #444;
+}
+
+/* Styles pour le bouton Discord */
+.discord-button {
+    background-color: #7289DA;
+    color: #fff;
+    padding: 12px 24px;
+    margin: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 20px; /* Ajoute une marge en bas du bouton */
+}
+
+.discord-button:hover {
+    background-color: #5865f2;
+}
+
+/* Styles pour le conteneur principal */
+.corps {
+    height: auto;
+    width: auto;
+}
+
+/* Styles pour les images */
+.image {
+    text-align: center;
+}
+
+.image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 600px) {
+    .discord-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Styles pour les écrans très petits */
+@media screen and (max-width: 400px) {
+    .discord-button {
+        padding: 8px 16px;
+    }
+}

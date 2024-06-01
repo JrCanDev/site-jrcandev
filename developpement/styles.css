@@ -1,0 +1,65 @@
+/* Styles pour les éléments <h3> à l'intérieur des éléments <div> ayant la classe "corps" */
+div.corps h3 {
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps p {
+    color: #444;
+}
+
+/* Styles pour les éléments ayant la classe "highlight" */
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Styles pour les éléments ayant la classe "discord-button" */
+.discord-button {
+    background-color: #7289DA;
+    color: #fff;
+    padding: 12px 24px;
+    margin: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Styles pour les éléments ayant la classe "discord-button" lorsqu'ils sont survolés */
+.discord-button:hover {
+    background-color: #5865f2;
+}
+
+/* Styles pour les éléments ayant la classe "corps" */
+.corps {
+    padding-top: 5%;
+    height: auto;
+    width: auto;
+}
+
+/* Styles pour les éléments ayant la classe "image" */
+.image {
+    text-align: center;
+}
+
+/* Styles pour les images à l'intérieur des éléments ayant la classe "image" */
+.image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles pour les listes non ordonnées à l'intérieur des éléments <div> ayant la classe "corps" */
+.corps ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles pour les éléments <li> à l'intérieur des éléments <div> ayant la classe "corps" */
+.corps li {
+    margin-bottom: 5px;
+}

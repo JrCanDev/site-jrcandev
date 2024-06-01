@@ -1,0 +1,32 @@
+/* Styles pour les liens dans les paragraphes du conteneur principal */
+.corps p a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Styles au survol des liens dans le conteneur principal */
+.corps a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Styles pour les vidéos */
+video {
+    width: 300px;
+    height: 220px;
+    margin-left: -50px;
+}
+
+/* Styles pour les images de la galerie */
+.gallery-item img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+/* Styles au survol des images de la galerie */
+.gallery-item img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

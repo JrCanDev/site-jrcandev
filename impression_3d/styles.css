@@ -1,0 +1,42 @@
+/* Définition des styles pour les balises <p> à l'intérieur de la classe "corps" */
+.corps p {
+    word-wrap: break-word;
+}
+  
+  /* Définition des styles pour les balises <a> à l'intérieur des balises <p> de la classe "corps" */
+.corps p a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+  
+  /* Définition des styles pour les liens <a> lorsqu'ils sont survolés */
+.corps a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}
+
+  /* Définition des styles pour les balises li de la classe "details" */
+.details li{
+  margin-bottom: 10px;
+}
+  
+  /* Définition des styles pour les balises <video> */
+video {
+    width: 300px;
+    height: 220px;
+    margin-left: -50px;
+}
+  
+  /* Définition des styles pour les images dans les éléments de la classe "gallery-item" */
+.gallery-item img {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+  
+  /* Définition des styles pour les images lorsqu'elles sont survolées */
+.gallery-item img:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
