@@ -1,0 +1,1034 @@
+/* BODY POUR TOUTES LES PAGES */
+
+/* Styles pour l'élément <body> */
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f8f8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*background-image: url("../img/background.png");
+    background-size: contain;
+    background-repeat: repeat-y;
+    background-position: center;*/
+}
+
+/* Styles pour les titres de niveau 1 */
+.corps h1 {
+    font-size: 34px;
+    color: #333;
+}
+
+/* Styles pour les titres de niveau 2 */
+.corps h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.corps h3{
+    font-size: 26px;
+}
+
+.corps p{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+.corps ul {
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    margin-bottom: 1em;
+}
+
+/* Styles pour les écrans plus petits */
+@media screen and (max-width: 600px) {
+    .discord-button {
+        padding: 10px 20px;
+    }
+}
+
+/* Styles pour les écrans très petits */
+@media screen and (max-width: 400px) {
+    .discord-button {
+        padding: 8px 16px;
+    }
+}
+
+
+
+/*  HEADER */
+/* Styles pour les éléments ayant la classe "corps" */
+.corps {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;         
+}
+
+
+/* Styles pour l'élément <header> */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #1bc376;
+    color: #9d3e2f;
+    border-bottom: #16a464 solid 3px;
+    z-index: 1000;
+}
+
+/* Styles pour l'élément ayant la classe "logo" à l'intérieur de <header> */
+header .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+/* Styles pour les images à l'intérieur de l'élément ayant la classe "logo" */
+.logo img{
+    border-radius: 10px;
+}
+
+/* Styles pour l'élément <nav> à l'intérieur de <header> */
+header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    flex-grow: 1;
+    margin-top: 1em;
+}
+
+/* Styles pour les listes à l'intérieur de <nav> */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -20px;
+    margin-right: 20px;
+}
+
+/* Styles pour chaque élément de liste à l'intérieur de <nav> */
+nav ul li {
+    position: relative;
+}
+
+/* Styles pour les liens à l'intérieur des éléments de liste de <nav> */
+nav ul li a {
+    display: block;
+    padding: 1em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* Styles pour les liens lorsqu'ils sont survolés */
+nav ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Styles pour le menu déroulant */
+.menu-déroulant {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: auto;
+    background-color: #fff;
+    box-shadow: 0 0.5em 1em rgb(0, 0, 0);
+    z-index: 2;
+    width: max-content;
+}
+
+.dérouler:hover .menu-déroulant {
+    display: block;
+}
+
+.menu-déroulant li {
+    display: block;
+}
+
+.menu-déroulant li a {
+    display: block;
+    padding: 0.5em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-déroulant li a:hover {
+    color: #fff;
+    background-color: #16a464;
+}
+
+.menu-déroulant li a:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #9d3e2f;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-déroulant li a:hover:before {
+    opacity: 1;
+}
+
+.dérouler a:hover{
+    text-decoration: underline;
+}
+
+
+/* ACCUEIL */
+/* Styles pour la page Accueil */
+.section-acceuil {
+    padding: 2em;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-acceuil h2 {
+    margin-bottom: 1em;
+    color:#333;
+}
+
+.section-acceuil .image {
+    margin-left: auto;
+    flex-basis: 50%;
+    width: 500px;
+    height: 300px;
+}
+
+
+
+/* FAQ */
+/* Styles pour les balises <h1> à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq h1 {
+    color: #333;
+    margin-top: 30px;
+}
+
+/* Styles pour les balises <h2> à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq h2 {
+    color: #333;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq p {
+    color: #666;
+}
+
+/* Styles pour les balises <a> à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq a {
+    color: #2c92ff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Styles pour les listes ordonnées et non ordonnées à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq ol,
+.corps-faq ul {
+    color: #666;
+    margin-left: 20px;
+}
+
+.corps-faq li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Styles pour les éléments <pre> à l'intérieur des éléments ayant la classe "corps" */
+.corps-faq pre {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Styles pour le contenu des balises <code> à l'intérieur des éléments <pre> */
+.corps-faq pre code {
+    font-family: Consolas, monospace;
+}
+
+/* Styles pour les éléments ayant la classe "video-tutorial" */
+.video-tutorial {
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 8px;
+    max-width: 60%; /* Ajout de la propriété max-width */
+    
+}
+
+/* Styles pour les vidéos à l'intérieur des éléments ayant la classe "video-tutorial" */
+.video-tutorial video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour les liens lorsqu'ils sont survolés */
+.corps-faq a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+.corps-faq .dropdown {
+    position: fixed;
+    top: 180px;
+    right: 20px;
+    z-index: 1;
+}
+
+.corps-faq .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    max-height: 500px;
+    overflow-y: auto;
+    min-width: 500px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.corps-faq .dropdown .dropdown-toggle {
+    width: 100px;
+    height: 50px;
+    background-color: #c4c4c4;
+    color: black;
+    cursor: pointer;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corps-faq .dropdown .dropdown-toggle span {
+    margin-left: 5px;
+}
+
+.corps-faq .dropdown.active .dropdown-content {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .corps-faq .dropdown {
+        display: none;
+    }
+
+    .corps-faq .questions {
+        display: block;
+    }
+}
+
+@media (min-width: 801px) {
+    .corps-faq .questions {
+        display: none;
+    }
+}
+
+
+
+/* CHARTE */
+.corps-charte {
+    padding: 1em;
+}
+
+
+/* REJOINDRE */
+/* Styles pour les titres de niveau 1 */
+.corps-rejoindre h1 {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: #333;
+}
+
+.corps-rejoindrep{
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Styles pour le conteneur Discord */
+.corps-rejoindre div.discord {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1em;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Styles pour l'image du logo Discord */
+.corps-rejoindre div.discord img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Styles pour le conteneur "Rejoindre" */
+.corps-rejoindre div.rejoindre {
+    text-align: left;
+    font-size: 30px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Styles pour le bouton Discord */
+.discord-button {
+    background-color: #7289DA;
+    color: #fff;
+    padding: 12px 24px;
+    margin: auto;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.discord-button:hover {
+    background-color: #5865f2;
+}
+
+/* Media queries pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .corps-rejoindre h1 {
+        font-size: 24px;
+        width: 90%;
+    }
+
+    .corps-rejoindre a h1:hover {
+        font-size: 40px;
+    }
+
+    .corps-rejoindre div.discord {
+        text-align: center;
+        margin: 1em auto;
+        padding-top: 1em;
+    }
+    
+    .corps-rejoindre div.rejoindre {
+        text-align: justify;
+        font-size: 30px;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+    }
+    
+    .corps-rejoindre div.corps {
+        margin: 0 auto;
+        width: 80%;
+    }
+}    
+
+/* Media queries pour les écrans de petite taille */
+@media screen and (max-width: 480px) {
+    .corps-rejoindre h1 {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .corps-rejoindre a h1:hover {
+        font-size: 35px;
+    }
+
+    .corps-rejoindre div.rejoindre {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    .corps-rejoindre div.corps {
+        width: 95%;
+    }
+}
+
+
+
+/* CONTACT */
+/* Styles pour les éléments ayant la classe "corps" */
+.corps-contact {
+    padding-top: 5%;
+    text-align: left;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps-contact p {
+    overflow-wrap: break-word; /* Ajout de la propriété overflow-wrap pour le passage à la ligne des mots longs */
+}
+
+/* Styles pour les balises <a> à l'intérieur des balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps-contact p a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Styles pour les balises <h1> */
+.corps-contact h1 {
+    color:#333;
+}
+
+/* Styles pour les liens <a> lorsqu'ils sont survolés */
+.corps-contact h1 a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}
+
+/* Styles pour les écrans de petite taille */
+@media screen and (max-width: 768px) {
+    .corps-contact {
+        width: 95%;
+    }
+
+    .corps-contact p {
+        font-size: 24px;
+    }
+
+    .corps-contact h1 {
+        font-size: 24px;
+        width: 100%;
+    }
+}
+
+/* Styles pour les écrans de très petite taille */
+@media screen and (max-width: 480px) {
+    .corps p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+
+
+/* BUREAU */
+/* Styles pour les balises <h1> à l'intérieur de la classe "corps" */
+.corps-bureau h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 34px;
+}
+
+  /* Styles pour les balises <p> à l'intérieur de la classe "corps" */
+.corps-bureau p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+  /* Styles pour la classe "bureau-members" */
+.bureau-members {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+  /* Styles pour les éléments de classe "bureau-member" */
+.bureau-member {
+    flex: 0 0 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+  /* Styles pour les images à l'intérieur des éléments de classe "bureau-member" */
+.bureau-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+  /* Styles pour la classe "member-info" à l'intérieur des éléments de classe "bureau-member" */
+.bureau-member .member-info {
+    text-align: center;
+}
+
+  /* Styles pour les balises <h3> à l'intérieur des éléments de classe "bureau-member" */
+.bureau-member h3 {
+    color: #333;
+    margin: 0 0 5px;
+}
+
+  /* Styles pour les balises <p> à l'intérieur des éléments de classe "bureau-member" */
+.bureau-member p {
+    color: #666;
+    margin: 0;
+}
+
+  /* Styles pour la classe "association-info" */
+.association-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+  /* Styles pour les images à l'intérieur de la classe "association-info" */
+.association-info img {
+    width: 200px;
+    height: 70px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+  /* Styles pour les balises <h2> à l'intérieur de la classe "association-info" */
+.association-info h2 {
+    color: #333;
+    margin: 0;
+}
+
+
+
+/* HEBERGEMENT */
+/* Styles pour les titres h1 */
+.corps-hebergement h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles pour les paragraphes */
+.corps-hebergement p {
+    color: #444;
+}
+
+/* Styles pour le conteneur principal */
+.corps-hebergement {
+    height: auto;
+    width: auto;
+}
+
+/* Styles pour les images */
+.image-hebergement {
+    text-align: center;
+}
+
+.image-hebergement img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* DEVELOPPEMENT */
+/* Styles pour les éléments <h3> à l'intérieur des éléments <div> ayant la classe "corps" */
+.corps-dev h3 {
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Styles pour les balises <p> à l'intérieur des éléments ayant la classe "corps" */
+.corps-dev p {
+    color: #444;
+}
+
+/* Styles pour les éléments ayant la classe "highlight" */
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* Styles pour les éléments ayant la classe "corps" */
+.corps-dev {
+    padding-top: 5%;
+    height: auto;
+    width: auto;
+}
+
+/* Styles pour les listes non ordonnées à l'intérieur des éléments <div> ayant la classe "corps" */
+.corps-dev ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles pour les éléments <li> à l'intérieur des éléments <div> ayant la classe "corps" */
+.corps-dev li {
+    margin-bottom: 5px;
+}
+
+
+
+/* IMPRESSION 3D */
+  /* Définition des styles pour les balises li de la classe "details" */
+.corps-3d .details li{
+    margin-bottom: 10px;
+}
+
+
+
+/* REALISATIONS */
+.corps-realisation {
+    background-image: url(../img/background_code.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+.corps-realisation::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../img/background_code.jpg);
+    background-size: cover;
+    background-repeat: repeat-y;
+    z-index: -1;
+    opacity: 1;
+    pointer-events: none;
+}
+
+.corps-realisation .section-heading {
+    text-align:center;
+    color:#9d3e2fff;
+    margin-top: 150px;
+    margin-bottom:70px;
+    font-size: 35px;
+    width: 100%;
+}
+
+.corps-realisation a{
+    text-decoration: none;
+}
+
+.corps-realisation .logo{
+    margin-top: 20px;
+    border-radius: 15px;
+    width: 1000px;
+}
+
+.column-4 {
+    text-align:center;
+    width: 300px;
+    padding: 10px;
+    margin:20px;
+    height: 150px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* Color and Images for Project Containers  */
+
+.case-1 {
+    background-color:#9d3e2fff;
+    color:#f9f8e5ff;
+}
+
+.case-2 {
+    background-color: #1bc376ff;
+    color:#9d3e2fff;;
+}
+
+.case-3 {
+    background-color:#f9f8e5ff;
+    color:#9d3e2fff;
+}
+
+
+/* AUTRES */
+/* Styles pour les titres de niveau 1 */
+.corps-autres .h1 {
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Styles pour les titres de niveau 2 */
+.corps-autres .h2 {
+    color: #333;
+    margin-left: 20px;
+}
+
+/* Styles pour les paragraphes */
+.corps-autres p {
+    color: #333;
+}
+
+/* Styles pour les liens */
+.corps-autres a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.corps-autres a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+    text-decoration: underline;
+}
+
+/* Styles pour les blocs de citation */
+.corps-autres blockquote {
+    font-style: italic;
+    color: #777;
+    margin: 10px 0;
+    padding-left: 20px;
+    border-left: 2px solid #ccc;
+}
+
+/* Styles pour les liens au survol */
+.corps-autres a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le conteneur principal */
+.corps-autres {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+/* Styles pour les citations */
+.corps-autres .quote {
+    padding: 1em;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Styles pour les images */
+.corps-autres div.image{
+    height: 125px;
+}
+
+
+
+/* MENTIONS LEGALES */
+/* Styles pour le conteneur de texte */
+.corps-mentions div.text {
+    padding: 1em;
+}
+
+/* Styles pour les paragraphes dans le conteneur de texte */
+.corps-mentions div.text p {
+    text-align: justify;
+}
+
+/* Styles pour les listes à puces dans le conteneur de texte */
+.corps-mentions div.text ul {
+    list-style-position: inside;
+    margin-bottom: 1em;
+}
+
+/* Styles pour les éléments de liste dans le conteneur de texte */
+.corps-mentions div.text ul li {
+    font-size: 1em;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+/* Styles pour les liens cliquables */
+.corps-mentions p a:hover {
+    color: #9d3e2f;
+    transition: color 0.1s ease-in-out;
+}
+
+
+
+/* FOOTER */
+/* Styles pour le footer */
+footer {
+    padding: 1em;
+    background-color: #1bc376;
+    color: #fff;
+    margin-top: auto;
+    /* position: sticky; */
+    bottom: 0;
+    border-top: 1px solid #000;
+}
+
+
+footer li {
+    margin: auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    padding: 0;
+}
+
+
+/* IMAGES ZOOM */
+/* Styles pour les images en lightbox (sur clic) */
+
+.voile{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    opacity: 70%;
+}
+
+.lightbox {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.336);
+    z-index: 9999;
+    display: none;
+}
+
+.lightbox img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Ajout des Media Queries pour le responsive */
+@media screen and (max-width: 1067px) {
+    nav ul li a {
+        padding: 0.5em;
+        font-size: 24px;
+    }
+
+    .menu-déroulant {
+        margin-top: 0px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0.5em 1em rgb(0, 0, 0);
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        right: -10px; /* Décalage vers la gauche */
+    }
+}
+
+@media screen and (max-width: 890px) {
+    nav ul li a {
+        padding: 0.5em;
+        font-size: 20px;
+    }
+
+    .menu-déroulant {
+        margin-top: 1px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0.5em 1em rgb(0, 0, 0);
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        right: -10px; /* Décalage vers la gauche */
+    }
+}
+
+@media screen and (max-width: 779px) {
+    nav ul li a {
+        padding: 0.5em;
+        font-size: 18px;
+    }
+
+    .menu-déroulant {
+        margin-top: 1px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 0.5em 1em rgb(0, 0, 0);
+        transition: opacity 0.3s ease-in-out;
+        z-index: 2;
+        right: -10px; /* Décalage vers la gauche */
+    }
+
+    .section-acceuil {
+        flex-direction: column;
+    }
+
+    .section-acceuil .image {
+        margin: 2em auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-acceuil {
+        flex-direction: column;
+    }
+
+    .section-acceuil .image {
+        margin: 2em auto;
+        flex-basis: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+
+    .menu-déroulant {
+        width: 7em;
+        font-size: 0.8em;
+    }
+
+    .section-acceuil h2 {
+        font-size: 20px;
+    }
+
+    .section-acceuil p {
+        font-size: 1.2em;
+        line-height: 1.2em;
+    }
+}

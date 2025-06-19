@@ -2,7 +2,7 @@
         <div class="bottom-bar">
             <p>
                 <ul class="legal">
-                    <li><a href="../mentions_legales/mentions_legales.php">Mentions légales</a></li>
+                    <li><a href="?page=mentions_legales">Mentions légales</a></li>
                 </ul>
             </p>
             <p>
