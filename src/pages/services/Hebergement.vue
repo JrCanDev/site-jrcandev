@@ -19,7 +19,7 @@
         <li>dynamique à base de PHP, postgreSQL, adminer</li>
       </ul>
     </p>
-    <p>Pour demander l'ouverture d'un hébergement, rien de plus simple : <a href="https://www.jrcan.dev/faq/faq.php">suivez le guide</a>.</p>
+    <p>Pour demander l'ouverture d'un hébergement, rien de plus simple : <RouterLink to="/aide">suivez le guide</RouterLink>.</p>
 
     <a class="discord-button" href="https://discord.gg/pW3gVfK22z">Rejoignez notre serveur Discord</a>
   </div>
