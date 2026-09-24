@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { REALISATIONS_ENABLED, ARCHIVES_ENABLED } from '../config'
+import { resolveLegacyPath } from './legacy'
 
 const routes = [
   { path: '/', component: () => import('../pages/AccueilPage.vue'), meta: { title: 'Accueil', description: "JrCanDev, association d'étudiants et d'enseignants de l'IUT du Littoral Côte d'Opale." } },
@@ -75,6 +76,18 @@ const router = createRouter({
     if (to.hash) return { el: to.hash }
     return { top: 0 }
   },
+})
+
+// Redirect old ?page=... URLs without adding a history entry
+router.beforeEach((to) => {
+  if (to.path !== '/') return
+  const first = (value) => (Array.isArray(value) ? value[0] : value)
+  const path = resolveLegacyPath({
+    page: first(to.query.page),
+    sub: first(to.query.sub),
+    annee: first(to.query.annee),
+  })
+  if (path) return { path, hash: to.hash, replace: true }
 })
 
 router.afterEach((to) => {
