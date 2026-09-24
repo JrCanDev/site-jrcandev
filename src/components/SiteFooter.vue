@@ -3,7 +3,7 @@
     <div class="bottom-bar">
       <p>
         <ul class="legal">
-          <li><a href="?page=mentions_legales">Mentions légales</a></li>
+          <li><RouterLink to="/mentions-legales">Mentions légales</RouterLink></li>
         </ul>
       </p>
       <p>

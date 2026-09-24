@@ -1,9 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
-// Reimplémentation sans jQuery du zoom d'image ($("a[rel='zoom']")) présent
-// dans gabarit/header.php à l'origine : un clic sur un lien rel="zoom" ouvre
-// l'image en grand, un clic sur le voile ou en dehors de l'image la referme.
+// Opens a[rel="zoom"] links in an overlay; click outside the image to close.
 const isOpen = ref(false)
 const src = ref('')
 

@@ -4,33 +4,33 @@
 <template>
   <header>
     <div class="logo">
-      <a href="?"><img src="/img/logo_JrCanDev.png" alt="Logo JrCanDev" height="50"></a>
+      <RouterLink to="/"><img src="/img/logo_JrCanDev.png" alt="Logo JrCanDev" height="50"></RouterLink>
     </div>
     <nav>
       <ul>
-        <!-- Chemins vers toutes les pages -->
-        <li><a href="?">Accueil</a></li>
+        <!-- Links to all pages -->
+        <li><RouterLink to="/">Accueil</RouterLink></li>
         <li class="dérouler">
           <a href="#">A propos</a>
           <ul class="menu-déroulant">
-            <li><a href="?page=contact&sub=charte">Charte</a></li>
-            <li><a href="?page=contact&sub=rejoindre">Nous rejoindre</a></li>
-            <li><a href="?page=contact&sub=contact">Nous contacter</a></li>
-            <li><a href="?page=contact&sub=bureau">Bureau de l'asso</a></li>
+            <li><RouterLink to="/association/charte">Charte</RouterLink></li>
+            <li><RouterLink to="/association/nous-rejoindre">Nous rejoindre</RouterLink></li>
+            <li><RouterLink to="/association/contact">Nous contacter</RouterLink></li>
+            <li><RouterLink to="/association/bureau">Bureau de l'asso</RouterLink></li>
           </ul>
         </li>
         <li class="dérouler">
           <a href="#">Services</a>
           <ul class="menu-déroulant">
-            <li><a href="?page=services&sub=hebergement">Hébergement</a></li>
-            <li><a href="?page=services&sub=developpement">Développement</a></li>
-            <li><a href="?page=services&sub=impression_3D">Impression 3D</a></li>
-            <li><a href="?page=services&sub=vr">Réalité virtuelle</a></li>
+            <li><RouterLink to="/services/hebergement">Hébergement</RouterLink></li>
+            <li><RouterLink to="/services/developpement">Développement</RouterLink></li>
+            <li><RouterLink to="/services/impression-3d">Impression 3D</RouterLink></li>
+            <li><RouterLink to="/services/realite-virtuelle">Réalité virtuelle</RouterLink></li>
           </ul>
         </li>
-        <!-- Réalisations désactivé temporairement, voir src/App.vue -->
-        <li><a href="?page=faq">FAQ</a></li>
-        <!-- Archive désactivé temporairement, voir src/App.vue -->
+        <!-- Realisations disabled, see src/config.js -->
+        <li><RouterLink to="/aide">FAQ</RouterLink></li>
+        <!-- Archives disabled, see src/config.js -->
         <li><a href="https://files.jrcan.dev/web/client/login">Connexion</a></li>
       </ul>
     </nav>

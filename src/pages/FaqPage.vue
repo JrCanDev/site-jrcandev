@@ -1,8 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 
-// Reimplémentation en Vue du menu déroulant vanilla-JS présent à l'origine
-// dans views/faq/index.view.php (dropdown-toggle / dropdown-content).
+// Toggle for the question links dropdown.
 const isDropdownOpen = ref(false)
 
 function toggleDropdown(event) {
