@@ -1,4 +1,4 @@
 <script>
-// Contenu identique à la page "Réalisations" actuelle (même liste de projets 2024-2025).
+// Same content as the current "Realisations" page (2024-2025 projects).
 export { default } from '../../realisations/But1Info.vue'
 </script>

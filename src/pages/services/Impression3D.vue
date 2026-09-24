@@ -1,7 +1,7 @@
 <template>
   <div class="corps corps-3d">
     <h1>Nous proposons un service d'impression 3D</h1>
-    <p>Afin de permettre à tout le monde d'imprimer ce qu'il souhaite. Pour pouvoir en profiter, contactez nous sur notre <a href="?page=contact&sub=rejoindre">discord</a>.</p>
+    <p>Afin de permettre à tout le monde d'imprimer ce qu'il souhaite. Pour pouvoir en profiter, contactez nous sur notre <RouterLink to="/association/nous-rejoindre">discord</RouterLink>.</p>
     <div style="display: flex; align-items: flex-start;">
       <div class="gallery-item">
         <a href="/img/impression_3D/imprimante.jpg" rel="zoom"><img src="/img/impression_3D/imprimante.jpg" alt="photo_imprimante" width="200" height="300"></a>
