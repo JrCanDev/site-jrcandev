@@ -1,0 +1,231 @@
+/* Design tokens, values from the JrCanDev design system (source of truth):
+   https://claude.ai/artifact/J8sMQa5E4ZGXL3diwvfLsP */
+
+:root {
+  color-scheme: light;
+  --color-surface: #fbfaf6;
+  --color-surface-raised: #ffffff;
+  --color-surface-sunken: #f1efe6;
+  --color-ink: #16201b;
+  --color-ink-muted: #4a5550;
+  --color-ink-subtle: #5f6a64;
+  --color-border: #d9d6cb;
+  --color-border-strong: #7d8781;
+  --color-brand: #1bc376;
+  --color-on-brand-fill: #0b1a12;
+  --color-brand-strong: #0b7343;
+  --color-on-brand-strong: #ffffff;
+  --color-brand-soft: #e2f5ea;
+  --color-on-brand-soft: #0a5c36;
+  --color-accent: #9d3e2f;
+  --color-accent-soft: #f7e8e3;
+  --color-focus: #0b7343;
+  --color-info: #1d5fb8;
+  --color-warning: #8a5300;
+  --color-danger: #b42318;
+  --color-discord: #4752c4;
+  --shadow-sm: 0 1px 2px rgba(22,32,27,0.08);
+  --shadow-md: 0 8px 24px rgba(22,32,27,0.12);
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --text-display-size: 56px;
+  --text-display-line: 60px;
+  --text-display-weight: 700;
+  --text-display-tracking: -0.02em;
+  --text-h1-size: 40px;
+  --text-h1-line: 46px;
+  --text-h1-weight: 700;
+  --text-h1-tracking: -0.015em;
+  --text-h2-size: 30px;
+  --text-h2-line: 36px;
+  --text-h2-weight: 600;
+  --text-h2-tracking: -0.01em;
+  --text-h3-size: 22px;
+  --text-h3-line: 28px;
+  --text-h3-weight: 600;
+  --text-lead-size: 20px;
+  --text-lead-line: 31px;
+  --text-lead-weight: 400;
+  --text-body-size: 17px;
+  --text-body-line: 27px;
+  --text-body-weight: 400;
+  --text-small-size: 14px;
+  --text-small-line: 21px;
+  --text-small-weight: 400;
+  --text-label-size: 15px;
+  --text-label-line: 20px;
+  --text-label-weight: 600;
+  --text-overline-size: 13px;
+  --text-overline-line: 16px;
+  --text-overline-weight: 600;
+  --text-overline-tracking: 0.08em;
+  --text-code-size: 15px;
+  --text-code-line: 22px;
+  --text-code-weight: 400;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --space-9: 112px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+  --container-max: 1160px;
+  --measure: 40rem;
+  --header-height: 72px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-surface: #0f1512;
+    --color-surface-raised: #18211c;
+    --color-surface-sunken: #0a0e0c;
+    --color-ink: #edf2ee;
+    --color-ink-muted: #aab6af;
+    --color-ink-subtle: #909c95;
+    --color-border: #2b3731;
+    --color-border-strong: #6b7a72;
+    --color-brand: #1bc376;
+    --color-on-brand-fill: #0b1a12;
+    --color-brand-strong: #3ddc91;
+    --color-on-brand-strong: #062014;
+    --color-brand-soft: #12382a;
+    --color-on-brand-soft: #8ff0bf;
+    --color-accent: #e98c78;
+    --color-accent-soft: #3b201a;
+    --color-focus: #3ddc91;
+    --color-info: #8cb8ff;
+    --color-warning: #f0b44c;
+    --color-danger: #ff8a7a;
+    --color-discord: #5865f2;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.5);
+    --shadow-md: 0 8px 24px rgba(0,0,0,0.6);
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-surface: #0f1512;
+  --color-surface-raised: #18211c;
+  --color-surface-sunken: #0a0e0c;
+  --color-ink: #edf2ee;
+  --color-ink-muted: #aab6af;
+  --color-ink-subtle: #909c95;
+  --color-border: #2b3731;
+  --color-border-strong: #6b7a72;
+  --color-brand: #1bc376;
+  --color-on-brand-fill: #0b1a12;
+  --color-brand-strong: #3ddc91;
+  --color-on-brand-strong: #062014;
+  --color-brand-soft: #12382a;
+  --color-on-brand-soft: #8ff0bf;
+  --color-accent: #e98c78;
+  --color-accent-soft: #3b201a;
+  --color-focus: #3ddc91;
+  --color-info: #8cb8ff;
+  --color-warning: #f0b44c;
+  --color-danger: #ff8a7a;
+  --color-discord: #5865f2;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.5);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+/* Smaller headings on mobile */
+@media (max-width: 639px) {
+  :root {
+    --text-display-size: 40px;
+    --text-display-line: 44px;
+    --text-h1-size: 32px;
+    --text-h1-line: 38px;
+    --header-height: 64px;
+  }
+}
+
+/* Text styles */
+.jc-display {
+  font-family: var(--font-display);
+  font-size: var(--text-display-size);
+  line-height: var(--text-display-line);
+  font-weight: var(--text-display-weight);
+  letter-spacing: var(--text-display-tracking);
+}
+
+.jc-h1 {
+  font-family: var(--font-display);
+  font-size: var(--text-h1-size);
+  line-height: var(--text-h1-line);
+  font-weight: var(--text-h1-weight);
+  letter-spacing: var(--text-h1-tracking);
+}
+
+.jc-h2 {
+  font-family: var(--font-display);
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-line);
+  font-weight: var(--text-h2-weight);
+  letter-spacing: var(--text-h2-tracking);
+}
+
+.jc-h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-h3-size);
+  line-height: var(--text-h3-line);
+  font-weight: var(--text-h3-weight);
+}
+
+.jc-lead {
+  font-family: var(--font-sans);
+  font-size: var(--text-lead-size);
+  line-height: var(--text-lead-line);
+  font-weight: var(--text-lead-weight);
+  color: var(--color-ink-muted);
+}
+
+.jc-body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  font-weight: var(--text-body-weight);
+}
+
+.jc-small {
+  font-family: var(--font-sans);
+  font-size: var(--text-small-size);
+  line-height: var(--text-small-line);
+  font-weight: var(--text-small-weight);
+}
+
+.jc-label {
+  font-family: var(--font-sans);
+  font-size: var(--text-label-size);
+  line-height: var(--text-label-line);
+  font-weight: var(--text-label-weight);
+}
+
+.jc-overline {
+  font-family: var(--font-sans);
+  font-size: var(--text-overline-size);
+  line-height: var(--text-overline-line);
+  font-weight: var(--text-overline-weight);
+  letter-spacing: var(--text-overline-tracking);
+  text-transform: uppercase;
+  color: var(--color-ink-subtle);
+}
+
+.jc-code {
+  font-family: var(--font-mono);
+  font-size: var(--text-code-size);
+  line-height: var(--text-code-line);
+  font-weight: var(--text-code-weight);
+}
+
+.jc-overline--accent {
+  color: var(--color-accent);
+}
