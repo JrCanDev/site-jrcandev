@@ -1,0 +1,109 @@
+/* Light reset and global element styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-body-size);
+  line-height: var(--text-body-line);
+  font-weight: var(--text-body-weight);
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: var(--text-h1-size);
+  line-height: var(--text-h1-line);
+  font-weight: var(--text-h1-weight);
+  letter-spacing: var(--text-h1-tracking);
+}
+
+h2 {
+  font-size: var(--text-h2-size);
+  line-height: var(--text-h2-line);
+  font-weight: var(--text-h2-weight);
+  letter-spacing: var(--text-h2-tracking);
+}
+
+h3 {
+  font-size: var(--text-h3-size);
+  line-height: var(--text-h3-line);
+  font-weight: var(--text-h3-weight);
+}
+
+a {
+  color: var(--color-brand-strong);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family: var(--font-mono);
+  font-size: var(--text-code-size);
+  line-height: var(--text-code-line);
+  font-weight: var(--text-code-weight);
+}
+
+code,
+kbd,
+samp {
+  padding: 0.1em 0.35em;
+  background: var(--color-surface-sunken);
+  border-radius: var(--radius-sm);
+}
+
+pre {
+  margin: 0;
+  padding: var(--space-4);
+  overflow-x: auto;
+  background: var(--color-surface-sunken);
+  border-radius: var(--radius-sm);
+}
+
+pre code {
+  padding: 0;
+  background: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
