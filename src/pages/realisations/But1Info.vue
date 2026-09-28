@@ -1,5 +1,5 @@
 <template>
-  <div class="corps corps-realisation" style="margin: 0; margin-top:-5%;">
+  <div class="corps corps-realisation" style="margin: 0; margin-top: -5%">
     <h2 class="section-heading">Projets web 2024-2025</h2>
 
     <a href="https://projets.jrcan.dev/jo-tennis2table/" target="_blank">
@@ -27,7 +27,9 @@
       <div class="column-4 case-2"><h2 class="project-text">Voile</h2></div>
     </a>
     <a href="https://projets.jrcan.dev/smash-olympiques/" target="_blank">
-      <div class="column-4 case-3"><h2 class="project-text">Ping pong (parce que tennis de table est déjà pris)</h2></div>
+      <div class="column-4 case-3">
+        <h2 class="project-text">Ping pong (parce que tennis de table est déjà pris)</h2>
+      </div>
     </a>
     <a href="https://projets.jrcan.dev/paris-2024-volley-ball/" target="_blank">
       <div class="column-4 case-1"><h2 class="project-text">Volley Ball</h2></div>
@@ -35,14 +37,21 @@
     <a href="https://projets.jrcandev.netlib.re/boxe-jo/index.html" target="_blank">
       <div class="column-4 case-2"><h2 class="project-text">Boxe</h2></div>
     </a>
-    <a href="https://projets.jrcan.dev/escalade-jeux-olympiques-groupe1/SAE_groupe1/index.html" target="_blank">
-      <div class="column-4 case-3"><h2 class="project-text">Grimpette (escalade déjà pris)</h2></div>
+    <a
+      href="https://projets.jrcan.dev/escalade-jeux-olympiques-groupe1/SAE_groupe1/index.html"
+      target="_blank"
+    >
+      <div class="column-4 case-3">
+        <h2 class="project-text">Grimpette (escalade déjà pris)</h2>
+      </div>
     </a>
     <a href="https://projets.jrcan.dev/jud8-olympique/index.html" target="_blank">
       <div class="column-4 case-1"><h2 class="project-text">Judo</h2></div>
     </a>
     <a href="https://projets.jrcan.dev/info-judo/" target="_blank">
-      <div class="column-4 case-2"><h2 class="project-text">Danse sur tatami (judo déjà pris)</h2></div>
+      <div class="column-4 case-2">
+        <h2 class="project-text">Danse sur tatami (judo déjà pris)</h2>
+      </div>
     </a>
     <a href="https://projets.jrcan.dev/Lutte-JO-2024/index.html" target="_blank">
       <div class="column-4 case-3"><h2 class="project-text">Lutte</h2></div>

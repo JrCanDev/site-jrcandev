@@ -1,20 +1,32 @@
 <template>
   <div class="corps corps-3d">
     <h1>Nous proposons un service d'impression 3D</h1>
-    <p>Afin de permettre à tout le monde d'imprimer ce qu'il souhaite. Pour pouvoir en profiter, contactez nous sur notre <RouterLink to="/association/nous-rejoindre">discord</RouterLink>.</p>
-    <div style="display: flex; align-items: flex-start;">
+    <p>
+      Afin de permettre à tout le monde d'imprimer ce qu'il souhaite. Pour pouvoir en profiter,
+      contactez nous sur notre <RouterLink to="/association/nous-rejoindre">discord</RouterLink>.
+    </p>
+    <div style="display: flex; align-items: flex-start">
       <div class="gallery-item">
-        <a href="/img/impression_3D/imprimante.jpg" rel="zoom"><img src="/img/impression_3D/imprimante.jpg" alt="photo_imprimante" width="200" height="300"></a>
+        <a href="/img/impression_3D/imprimante.jpg" rel="zoom"
+          ><img
+            src="/img/impression_3D/imprimante.jpg"
+            alt="photo_imprimante"
+            width="200"
+            height="300"
+        /></a>
       </div>
-      <div style="margin-left: 10px;">
+      <div style="margin-left: 10px">
         <h1>Présentation de notre matériel</h1>
-        <p style="margin-top: 0; max-width: 500px; justify-content: center; font-size: 25px;">Cette imprimante est une imprimante de la marque CREALITY (référence : creality cr-10S pro V2).</p>
-        <p style="margin-top: 20px;"> Date de sortie : septembre 2020.</p>
+        <p style="margin-top: 0; max-width: 500px; justify-content: center; font-size: 25px">
+          Cette imprimante est une imprimante de la marque CREALITY (référence : creality cr-10S pro
+          V2).
+        </p>
+        <p style="margin-top: 20px">Date de sortie : septembre 2020.</p>
       </div>
     </div>
-    <div class="details" style="margin-top: 10px;">
+    <div class="details" style="margin-top: 10px">
       <p>Quelques détails :</p>
-      <ul style="margin-bottom: 0; list-style-type: '- '; padding-left: 0;">
+      <ul style="margin-bottom: 0; list-style-type: '- '; padding-left: 0">
         <li>Impression 3D de haute qualité</li>
         <li>Grand volume d'impression : jusqu'à 300 mm x 300 mm x 400 mm</li>
         <li>Structure solide en aluminium avec une stabilité améliorée</li>
@@ -38,39 +50,85 @@
         <li><h2>Masque de Bahtinov</h2></li>
         <h3>Photos de l'objet</h3>
         <div class="gallery-item">
-          <a href="/img/impression_3D/Masque_de_Bahtinov.jpg" rel="zoom"><img src="/img/impression_3D/Masque_de_Bahtinov.jpg" alt="Image 1" width="200" height="300"></a>
-          <a href="/img/impression_3D/Masque_de_Bahtinov2.jpg" rel="zoom"><img src="/img/impression_3D/Masque_de_Bahtinov2.jpg" alt="Image 2" width="200" height="300"></a>
-          <a href="/img/impression_3D/Masque_de_Bahtinov3.jpg" rel="zoom"><img src="/img/impression_3D/Masque_de_Bahtinov3.jpg" alt="Image 3" width="200" height="300"></a>
+          <a href="/img/impression_3D/Masque_de_Bahtinov.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Masque_de_Bahtinov.jpg"
+              alt="Image 1"
+              width="200"
+              height="300"
+          /></a>
+          <a href="/img/impression_3D/Masque_de_Bahtinov2.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Masque_de_Bahtinov2.jpg"
+              alt="Image 2"
+              width="200"
+              height="300"
+          /></a>
+          <a href="/img/impression_3D/Masque_de_Bahtinov3.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Masque_de_Bahtinov3.jpg"
+              alt="Image 3"
+              width="200"
+              height="300"
+          /></a>
         </div>
 
         <li><h2>Support d'appareil photo</h2></li>
         <h3>Photo de l'objet</h3>
         <div class="gallery-item">
-          <a href="/img/impression_3D/Support_appareil_photo.jpg" rel="zoom"><img src="/img/impression_3D/Support_appareil_photo.jpg" alt="Image 2" width="200" height="300"></a>
-          <a href="/img/impression_3D/Support_appareil_photo2.jpg" rel="zoom"><img src="/img/impression_3D/Support_appareil_photo2.jpg" alt="Image 2" width="200" height="300"></a>
-          <a href="/img/impression_3D/Support_appareil_photo3_2.jpg" rel="zoom"><img src="/img/impression_3D/Support_appareil_photo3_1.jpg" alt="Image 2" width="200" height="300"></a>
+          <a href="/img/impression_3D/Support_appareil_photo.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Support_appareil_photo.jpg"
+              alt="Image 2"
+              width="200"
+              height="300"
+          /></a>
+          <a href="/img/impression_3D/Support_appareil_photo2.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Support_appareil_photo2.jpg"
+              alt="Image 2"
+              width="200"
+              height="300"
+          /></a>
+          <a href="/img/impression_3D/Support_appareil_photo3_2.jpg" rel="zoom"
+            ><img
+              src="/img/impression_3D/Support_appareil_photo3_1.jpg"
+              alt="Image 2"
+              width="200"
+              height="300"
+          /></a>
         </div>
 
         <li><h2>Deckbox Magic The Gathering</h2></li>
         <h3>Photos de l'objet</h3>
         <div class="gallery-item">
-          <a href="/img/impression_3D/Deckbox.jpg" rel="zoom"><img src="/img/impression_3D/Deckbox.jpg" alt="Image 1" width="200" height="300"></a>
-          <a href="/img/impression_3D/Deckbox2.jpg" rel="zoom"><img src="/img/impression_3D/Deckbox2.jpg" alt="Image 2" width="200" height="300"></a>
-          <a href="/img/impression_3D/Deckbox3.jpg" rel="zoom"><img src="/img/impression_3D/Deckbox3.jpg" alt="Image 3" width="200" height="300"></a>
+          <a href="/img/impression_3D/Deckbox.jpg" rel="zoom"
+            ><img src="/img/impression_3D/Deckbox.jpg" alt="Image 1" width="200" height="300"
+          /></a>
+          <a href="/img/impression_3D/Deckbox2.jpg" rel="zoom"
+            ><img src="/img/impression_3D/Deckbox2.jpg" alt="Image 2" width="200" height="300"
+          /></a>
+          <a href="/img/impression_3D/Deckbox3.jpg" rel="zoom"
+            ><img src="/img/impression_3D/Deckbox3.jpg" alt="Image 3" width="200" height="300"
+          /></a>
         </div>
       </ul>
     </div>
     <div>
+      <h3>Liens vers des sites de modèles 3D :</h3>
       <ul>
-        <p><h3>Liens vers des sites de modèles 3D :</h3></p>
         <li><a href="https://www.thingiverse.com/">https://www.thingiverse.com/</a></li>
         <li><a href="https://cults3d.com/">https://cults3d.com/</a></li>
         <li><a href="https://www.myminifactory.com/fr/">https://www.myminifactory.com/fr/</a></li>
-        <li><a href="https://thangs.com/?sort=likes&range=month">https://thangs.com/?sort=likes&range=month</a></li>
+        <li>
+          <a href="https://thangs.com/?sort=likes&range=month"
+            >https://thangs.com/?sort=likes&range=month</a
+          >
+        </li>
         <li><a href="https://www.yeggi.com/">https://www.yeggi.com/</a></li>
       </ul>
+      <h3>Liens vers des logiciels de modélisation 3d</h3>
       <ul>
-        <p><h3>Liens vers des logiciels de modélisation 3d</h3></p>
         <li><a href="https://www.blender.org/download/">https://www.blender.org/download/</a></li>
       </ul>
     </div>

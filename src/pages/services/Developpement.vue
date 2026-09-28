@@ -1,6 +1,9 @@
 <template>
   <div class="corps corps-dev">
-    <h3>Pour tous vos projets de développement web, vous pourrez trouver de l'aide sur notre serveur discord</h3>
+    <h3>
+      Pour tous vos projets de développement web, vous pourrez trouver de l'aide sur notre serveur
+      discord
+    </h3>
     <ul>
       <li>Vous avez un concept mais cherchez des idées pour le mettre en valeur ?</li>
       <li>Venez en discuter !</li>
