@@ -1,0 +1,76 @@
+/* Page layout helpers */
+:root {
+  --gutter: var(--space-5);
+}
+
+@media (max-width: 639px) {
+  :root {
+    --gutter: var(--space-4);
+  }
+}
+
+.jc-container {
+  width: min(calc(100% - 2 * var(--gutter)), var(--container-max));
+  margin-inline: auto;
+}
+
+.jc-section {
+  padding-block: var(--space-8);
+}
+
+.jc-section--sunken {
+  background: var(--color-surface-sunken);
+}
+
+@media (max-width: 639px) {
+  .jc-section {
+    padding-block: var(--space-7);
+  }
+}
+
+/* Text column limited to a readable line length */
+.jc-prose {
+  max-width: var(--measure);
+}
+
+.jc-prose > * + * {
+  margin-top: var(--space-4);
+}
+
+.jc-prose > h2 {
+  margin-top: var(--space-7);
+}
+
+.jc-prose > h3 {
+  margin-top: var(--space-6);
+}
+
+.jc-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 640px) {
+  .jc-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .jc-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.jc-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
