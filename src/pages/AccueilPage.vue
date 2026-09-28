@@ -2,8 +2,14 @@
   <div class="corps">
     <section class="section-acceuil">
       <h2>Présentation de l'association et de ses activités</h2>
-      <p>JrCanDev est une association loi 1901 qui réunit des étudiants et des enseignants de l'IUT du Littoral Côte d'Opale (IUTLCO).</p>
-      <p>Ses objectifs sont de permettre à ses membres d'apprendre et de développer des compétences en mettant en place, utilisant et/ou administrant :</p>
+      <p>
+        JrCanDev est une association loi 1901 qui réunit des étudiants et des enseignants de l'IUT
+        du Littoral Côte d'Opale (IUTLCO).
+      </p>
+      <p>
+        Ses objectifs sont de permettre à ses membres d'apprendre et de développer des compétences
+        en mettant en place, utilisant et/ou administrant :
+      </p>
       <div class="ul">
         <ul>
           <li>des hébergements Internet de contenus statiques et/ou dynamiques,</li>
@@ -18,7 +24,7 @@
         </ul>
       </div>
       <div class="image">
-        <img src="/img/image_dev_web.webp" class="image">
+        <img src="/img/image_dev_web.webp" class="image" alt="" />
       </div>
     </section>
   </div>

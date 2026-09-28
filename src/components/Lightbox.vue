@@ -29,8 +29,11 @@ onUnmounted(() => document.removeEventListener('click', onDocumentClick))
 </script>
 
 <template>
-  <div class="voile" v-show="isOpen" @click="close"></div>
-  <div class="lightbox" v-show="isOpen" @click="onLightboxClick">
-    <img :src="src" alt="" class="lightbox-img">
+  <!-- Rewritten as an accessible <dialog> in JrCanFix-2.8 -->
+  <!-- eslint-disable-next-line vuejs-accessibility/click-events-have-key-events, vuejs-accessibility/no-static-element-interactions -->
+  <div v-show="isOpen" class="voile" @click="close"></div>
+  <!-- eslint-disable-next-line vuejs-accessibility/click-events-have-key-events, vuejs-accessibility/no-static-element-interactions -->
+  <div v-show="isOpen" class="lightbox" @click="onLightboxClick">
+    <img :src="src" alt="" class="lightbox-img" />
   </div>
 </template>

@@ -11,6 +11,8 @@ function toggleDropdown(event) {
 </script>
 
 <template>
+  <!-- Rewritten as an accessible accordion in JrCanFix-6.1 -->
+  <!-- eslint-disable-next-line vuejs-accessibility/click-events-have-key-events, vuejs-accessibility/no-static-element-interactions -->
   <div class="corps corps-faq" @click="isDropdownOpen = false">
     <div class="questions">
       <h2>Les différentes questions :</h2>
@@ -25,10 +27,15 @@ function toggleDropdown(event) {
     </div>
 
     <div class="dropdown">
+      <!-- eslint-disable-next-line vuejs-accessibility/click-events-have-key-events, vuejs-accessibility/no-static-element-interactions -->
       <div class="dropdown-toggle" @click="toggleDropdown">
         <span> liens vers les questions </span>
       </div>
-      <div class="dropdown-content" :style="{ display: isDropdownOpen ? 'block' : 'none' }" @click.stop>
+      <div
+        class="dropdown-content"
+        :style="{ display: isDropdownOpen ? 'block' : 'none' }"
+        @click.stop
+      >
         <h2>Les différentes questions :</h2>
         <ul>
           <li><a href="#hebergement">Héberger mon site</a></li>
@@ -42,19 +49,36 @@ function toggleDropdown(event) {
     </div>
 
     <h1 id="hebergement">Demande d'hébergement</h1>
-    <p>Dans un premier temps, il vous faudra trouver un nom pour votre projet. Celui-ci doit être tout en minuscule et caractère spécial.</p>
+    <p>
+      Dans un premier temps, il vous faudra trouver un nom pour votre projet. Celui-ci doit être
+      tout en minuscule et caractère spécial.
+    </p>
     <p>Vérifiez ensuite que ce nom n'est pas déjà pris en vous rendant à l'adresse :</p>
     <p><a href="https://projets.jrcan.dev/nomduprojet">https://projets.jrcan.dev/nomduprojet</a></p>
-    <p>Si un projet est déjà en ligne à cette adresse (ou si vous tombez sur une erreur 403), alors vous devez trouver un autre nom.</p>
-    <p>Ensuite, si ce n'est pas encore fait, rejoignez-nous sur discord <a href="https://discord.gg/ScrCRy5YCU">(nous rejoindre)</a>. Dans le salon hébergement_projets, tagguez @ admin-discord en donnant le nom du projet à créer et en précisant si le projet nécessite l'accès à une base de données.</p>
+    <p>
+      Si un projet est déjà en ligne à cette adresse (ou si vous tombez sur une erreur 403), alors
+      vous devez trouver un autre nom.
+    </p>
+    <p>
+      Ensuite, si ce n'est pas encore fait, rejoignez-nous sur discord
+      <a href="https://discord.gg/ScrCRy5YCU">(nous rejoindre)</a>. Dans le salon
+      hébergement_projets, tagguez @ admin-discord en donnant le nom du projet à créer et en
+      précisant si le projet nécessite l'accès à une base de données.
+    </p>
     <p>Le compte sera créé et le mot de passe vous sera envoyé en message privé sur discord.</p>
 
     <h1 id="changement-mot-de-passe">Changement de mot de passe</h1>
-    <p>Connectez-vous sur votre compte (<a href="https://files.jrcan.dev/web/client/login">ici</a>) puis cliquez sur votre nom d'utilisateur en haut à droite de la page et enfin "change password".</p>
+    <p>
+      Connectez-vous sur votre compte (<a href="https://files.jrcan.dev/web/client/login">ici</a>)
+      puis cliquez sur votre nom d'utilisateur en haut à droite de la page et enfin "change
+      password".
+    </p>
 
     <div class="video-tutorial">
+      <!-- Captions planned in JrCanFix-6.3 -->
+      <!-- eslint-disable-next-line vuejs-accessibility/media-has-caption -->
       <video controls>
-        <source src="/video/change_pwd.mp4" type="video/mp4">
+        <source src="/video/change_pwd.mp4" type="video/mp4" />
       </video>
     </div>
 
@@ -67,16 +91,35 @@ function toggleDropdown(event) {
 
     <h2>Par le site de gestion de votre compte</h2>
     <ol>
-      <li>Connectez-vous à votre compte (<a href="https://files.jrcan.dev/web/client/login">ici</a>).</li>
-      <li>Sur la page d'accueil, l'espace disque accessible est affiché. Il vous suffit alors de cliquer et glisser les fichiers de votre site dans cet espace. Prenez garde à bien avoir un fichier index.html.</li>
+      <li>
+        Connectez-vous à votre compte (<a href="https://files.jrcan.dev/web/client/login">ici</a>).
+      </li>
+      <li>
+        Sur la page d'accueil, l'espace disque accessible est affiché. Il vous suffit alors de
+        cliquer et glisser les fichiers de votre site dans cet espace. Prenez garde à bien avoir un
+        fichier index.html.
+      </li>
     </ol>
 
     <h2>Par transfert FTP</h2>
     <ol>
       <li>Installez un client FTP, par exemple FileZilla.</li>
-      <center><img src="/img/faq/filezilla_00.png" width="500px"></center>
+      <center>
+        <img
+          src="/img/faq/filezilla_00.png"
+          width="500px"
+          alt="Fenêtre de téléchargement de FileZilla"
+        />
+      </center>
       <li>Ouvrez le gestionnaire de sites dans FileZilla et cliquez sur "Nouveau".</li>
-      <center><img src="/img/faq/filezilla_01.png" width="500px"></center><br />
+      <center>
+        <img
+          src="/img/faq/filezilla_01.png"
+          width="500px"
+          alt="Gestionnaire de sites de FileZilla, bouton Nouveau site"
+        />
+      </center>
+      <br />
       <li>Remplissez le formulaire avec informations de connexion suivantes :</li>
       <ul>
         <li>Protocole : SFTP</li>
@@ -84,21 +127,58 @@ function toggleDropdown(event) {
         <li>Port : 2022</li>
         <li>Utilisateur : nomduprojet</li>
       </ul>
-      <center><img src="/img/faq/filezilla_02.png" width="500px"></center>
+      <center>
+        <img
+          src="/img/faq/filezilla_02.png"
+          width="500px"
+          alt="Formulaire de connexion SFTP rempli dans FileZilla"
+        />
+      </center>
       <li>Cliquez sur "Valider".</li>
-      <li>Revenez sur le gestionnaire de sites, sélectionnez le nouveau site, puis cliquez sur "Connexion".</li>
-      <center><img src="/img/faq/filezilla_03.png" width="500px"></center>
-      <li>Entrez le mot de passe qui vous a été communiqué. Validez si des fenêtres d'avertissements apparaissent.</li>
+      <li>
+        Revenez sur le gestionnaire de sites, sélectionnez le nouveau site, puis cliquez sur
+        "Connexion".
+      </li>
+      <center>
+        <img
+          src="/img/faq/filezilla_03.png"
+          width="500px"
+          alt="Sélection du site puis clic sur Connexion dans FileZilla"
+        />
+      </center>
+      <li>
+        Entrez le mot de passe qui vous a été communiqué. Validez si des fenêtres d'avertissements
+        apparaissent.
+      </li>
       <li>Vous êtes maintenant connecté.</li>
-      <center><img src="/img/faq/filezilla_04.png" width="500px"></center>
-      <li>Dans la partie basse gauche, naviguez sur votre disque dur local pour retrouver votre site, notamment votre fichier "index.html".</li>
-      <li>Toujours dans cette partie basse gauche, sélectionnez tous les fichiers (y compris le fichier "index.html"), puis faites un clic droit et choisissez "Téléverser".</li>
+      <center>
+        <img
+          src="/img/faq/filezilla_04.png"
+          width="500px"
+          alt="FileZilla connecté, arborescence des fichiers distants affichée"
+        />
+      </center>
+      <li>
+        Dans la partie basse gauche, naviguez sur votre disque dur local pour retrouver votre site,
+        notamment votre fichier "index.html".
+      </li>
+      <li>
+        Toujours dans cette partie basse gauche, sélectionnez tous les fichiers (y compris le
+        fichier "index.html"), puis faites un clic droit et choisissez "Téléverser".
+      </li>
       <li>Attendez que tous les fichiers soient envoyés.</li>
-      <li>Rendez-vous sur le site <a href="https://projets.jrcan.dev/nomduprojet">https://projets.jrcan.dev/nomduprojet</a> pour vérifier que la mise en ligne s'est bien passée.</li>
+      <li>
+        Rendez-vous sur le site
+        <a href="https://projets.jrcan.dev/nomduprojet">https://projets.jrcan.dev/nomduprojet</a>
+        pour vérifier que la mise en ligne s'est bien passée.
+      </li>
     </ol>
 
     <h1 id="carac_accentués">Les caractères accentués ne s'affichent pas correctement</h1>
-    <p>Pour gérer correctement les caractères accentués, vous devez indiquer l'encodage de caractères utf-8 dans la balise "head" de vos pages web :</p>
+    <p>
+      Pour gérer correctement les caractères accentués, vous devez indiquer l'encodage de caractères
+      utf-8 dans la balise "head" de vos pages web :
+    </p>
     <pre>
       &lt;head&gt;
       ...
@@ -108,21 +188,29 @@ function toggleDropdown(event) {
     </pre>
 
     <div class="video-tutorial">
+      <!-- Captions planned in JrCanFix-6.3 -->
+      <!-- eslint-disable-next-line vuejs-accessibility/media-has-caption -->
       <video controls>
-        <source src="/video/carac_accentues.mp4" type="video/mp4">
+        <source src="/video/carac_accentues.mp4" type="video/mp4" />
       </video>
     </div>
 
     <h1 id="acces_bdd">Accéder à une base de données sur des sites dynamiques</h1>
     <p>
-      Site exemple utilisant mysql disponible ici : <a href="https://demo-sql.jrcan.dev/" target="_blank">https://demo-sql.jrcan.dev/</a><br />
-      Site exemple utilisant postgreSQL disponible ici : <a href="https://pgdemo.jrcan.dev/" target="_blank">https://pgdemo.jrcan.dev/</a>
+      Site exemple utilisant mysql disponible ici :
+      <a href="https://demo-sql.jrcan.dev/" target="_blank">https://demo-sql.jrcan.dev/</a><br />
+      Site exemple utilisant postgreSQL disponible ici :
+      <a href="https://pgdemo.jrcan.dev/" target="_blank">https://pgdemo.jrcan.dev/</a>
     </p>
-    <p><strong>Attention !</strong> Lorsque vous demandez l'ouverture d'un hébergement, spécifiez bien si vous voulez avoir une BD mysql ou pstgreSQL.</p>
+    <p>
+      <strong>Attention !</strong> Lorsque vous demandez l'ouverture d'un hébergement, spécifiez
+      bien si vous voulez avoir une BD mysql ou pstgreSQL.
+    </p>
 
     <h1 id="wordhtml">Créer une page web sans connaître HTML</h1>
     <p>
-      Des outils en ligne vous permettront de créer des pages web en utilisant une interface de type word.<br />
+      Des outils en ligne vous permettront de créer des pages web en utilisant une interface de type
+      word.<br />
       Voir ici : <a href="https://wordhtml.com/" target="_blank">https://wordhtml.com/</a>
     </p>
   </div>

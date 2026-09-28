@@ -4,7 +4,7 @@ services:
       context: .
       target: dev
     ports:
-      - "5173:5173"
+      - '5173:5173'
     volumes:
       - .:/app
       - /app/node_modules
@@ -16,4 +16,4 @@ services:
       context: .
       target: preview
     ports:
-      - "8080:80"
+      - '8080:80'

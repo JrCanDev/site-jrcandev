@@ -1,10 +1,11 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <header>
     <div class="logo">
-      <RouterLink to="/"><img src="/img/logo_JrCanDev.png" alt="Logo JrCanDev" height="50"></RouterLink>
+      <RouterLink to="/"
+        ><img src="/img/logo_JrCanDev.png" alt="Logo JrCanDev" height="50"
+      /></RouterLink>
     </div>
     <nav>
       <ul>

@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev, main]
+
+jobs:
+  app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run lint
+      - run: npm run format:check
+      - run: npm test
+      - run: npm run build
+
+  docker-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --target preview -t jrcandev-preview .
+      - name: Smoke-test nginx config
+        run: |
+          docker run -d --rm --name jrcandev-preview -p 8080:80 jrcandev-preview
+          sleep 2
+          # Vue route: must return 200 (served by index.html)
+          test "$(curl -s -o /dev/null -w '%{http_code}' localhost:8080/services/hebergement)" = "200"
+          # Missing file: must return a real 404, not index.html
+          test "$(curl -s -o /dev/null -w '%{http_code}' localhost:8080/img/nexiste-pas.png)" = "404"
+          # Old FAQ URL: must redirect
+          test "$(curl -s -o /dev/null -w '%{http_code}' localhost:8080/faq/faq.php)" = "301"
+          docker stop jrcandev-preview
