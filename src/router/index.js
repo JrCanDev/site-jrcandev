@@ -141,6 +141,14 @@ if (ARCHIVES_ENABLED) {
   }
 }
 
+if (import.meta.env.DEV) {
+  routes.push({
+    path: '/_styleguide',
+    component: () => import('../pages/StyleguidePage.vue'),
+    meta: { title: 'Styleguide' },
+  })
+}
+
 routes.push({
   path: '/:pathMatch(.*)*',
   component: () => import('../pages/NotFoundPage.vue'),
