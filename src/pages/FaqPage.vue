@@ -61,7 +61,7 @@ function toggleDropdown(event) {
     </p>
     <p>
       Ensuite, si ce n'est pas encore fait, rejoignez-nous sur discord
-      <a href="https://discord.gg/ScrCRy5YCU">(nous rejoindre)</a>. Dans le salon
+      <a href="https://discord.gg/pW3gVfK22z">(nous rejoindre)</a>. Dans le salon
       hébergement_projets, tagguez @ admin-discord en donnant le nom du projet à créer et en
       précisant si le projet nécessite l'accès à une base de données.
     </p>

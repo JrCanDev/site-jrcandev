@@ -8,6 +8,9 @@ import JcAccordion from '../components/ui/JcAccordion.vue'
 import JcServiceCard from '../components/ui/JcServiceCard.vue'
 import JcMemberCard from '../components/ui/JcMemberCard.vue'
 import JcGallery from '../components/ui/JcGallery.vue'
+import JcSiteHeader from '../components/ui/JcSiteHeader.vue'
+import JcSiteFooter from '../components/ui/JcSiteFooter.vue'
+import JcPageHeader from '../components/ui/JcPageHeader.vue'
 
 const theme = ref('light')
 
@@ -161,6 +164,27 @@ const galleryImages = [
     <section>
       <h2 class="jc-h2">Gallery / Lightbox</h2>
       <JcGallery :images="galleryImages" />
+    </section>
+
+    <section>
+      <h2 class="jc-h2">PageHeader</h2>
+      <JcPageHeader
+        :breadcrumb="[{ label: 'Accueil', to: '/' }, { label: 'Hébergement' }]"
+        overline="Services"
+        title="Mettez votre site en ligne"
+        lead="Hébergement gratuit de sites statiques et dynamiques pour les projets des étudiants."
+      />
+    </section>
+
+    <section>
+      <h2 class="jc-h2">SiteHeader</h2>
+      <p class="jc-small">Reste collé en haut de la fenêtre en défilant (comportement normal).</p>
+      <JcSiteHeader />
+    </section>
+
+    <section>
+      <h2 class="jc-h2">SiteFooter</h2>
+      <JcSiteFooter />
     </section>
   </main>
 </template>

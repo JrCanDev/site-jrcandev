@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import { REALISATIONS_ENABLED, ARCHIVES_ENABLED } from '../config'
+import { usePageMeta } from '../composables/usePageMeta'
 import { resolveLegacyPath } from './legacy'
 
 const routes = [
@@ -152,7 +153,11 @@ if (import.meta.env.DEV) {
 routes.push({
   path: '/:pathMatch(.*)*',
   component: () => import('../pages/NotFoundPage.vue'),
-  meta: { title: 'Page introuvable' },
+  meta: {
+    title: 'Page introuvable',
+    description: "Cette page n'existe pas ou plus.",
+    robots: 'noindex',
+  },
 })
 
 const router = createRouter({
@@ -178,7 +183,7 @@ router.beforeEach((to) => {
 })
 
 router.afterEach((to) => {
-  document.title = to.meta.title ? `${to.meta.title} — JrCanDev` : 'JrCanDev'
+  usePageMeta(to)
 })
 
 export default router
